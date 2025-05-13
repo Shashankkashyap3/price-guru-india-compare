@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -42,8 +41,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     }).format(price);
   };
 
-  // Handle the platform link click
+  // Handle the platform link click with product-specific URL
   const handlePlatformClick = (url: string) => {
+    // Open the product-specific URL
     window.open(url, '_blank', 'noopener,noreferrer');
   };
 
