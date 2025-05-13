@@ -8,38 +8,38 @@ const categories = [
     id: 'smartphones',
     name: 'Smartphones',
     icon: '📱',
-    description: 'Latest mobile phones from top brands'
+    description: 'Latest phones from Apple, Samsung, Google Pixel'
   },
   {
     id: 'laptops',
-    name: 'Laptops & PCs',
+    name: 'Laptops',
     icon: '💻',
-    description: 'Computers for work and gaming'
+    description: 'Premium laptops from Lenovo, HP, Dell'
   },
   {
     id: 'tvs',
-    name: 'TVs & Entertainment',
+    name: 'TVs',
     icon: '📺',
-    description: 'Smart TVs and entertainment systems'
+    description: 'Smart TVs from Samsung, Sony, LG'
   },
   {
-    id: 'audio',
-    name: 'Audio & Headphones',
+    id: 'headphones',
+    name: 'Headphones',
     icon: '🎧',
-    description: 'Speakers, earphones, and more'
+    description: 'Audio from boAt, Sony, JBL'
+  },
+  {
+    id: 'smartwatches',
+    name: 'Smartwatches',
+    icon: '⌚',
+    description: 'Wearables from Samsung, Apple, boAt'
   },
   {
     id: 'cameras',
     name: 'Cameras',
     icon: '📷',
-    description: 'DSLRs, mirrorless, and action cameras'
-  },
-  {
-    id: 'wearables',
-    name: 'Wearable Tech',
-    icon: '⌚',
-    description: 'Smartwatches and fitness bands'
-  },
+    description: 'Cameras from Nikon, Canon, Sony'
+  }
 ];
 
 interface CategorySectionProps {
