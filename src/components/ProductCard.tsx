@@ -42,6 +42,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     }).format(price);
   };
 
+  // Handle the platform link click
+  const handlePlatformClick = (url: string) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <Card className="w-full h-full overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-t-4 border-guru-orange">
       <CardHeader className="pb-2">
@@ -110,7 +115,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
                   variant="outline" 
                   size="sm"
                   className={`shrink-0 ${platform.price === cheapestPrice && platform.inStock ? 'border-guru-orange text-guru-orange hover:bg-guru-orange hover:text-white' : ''}`}
-                  onClick={() => window.open(platform.url, '_blank')}
+                  onClick={() => handlePlatformClick(platform.url)}
                   disabled={!platform.inStock}
                 >
                   Visit
